@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Consulta tu turno</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="calculadora">
+            <div class="calculadora_box">
+                <h1>Solicita tu turno Online</h1>
+                <form class="sec">
+                    <p>Ingrese su nombre</p>
+                    <input class="monto" id="name" type="text" placeholder=" Marcelo">
+                    <p>Ingrese su apellido</p>
+                    <input class="monto" id="surname" type="text" placeholder=" Gomez">
+                    <p>Ingrese su numero de DNI (Sin puntos)</p>
+                    <input class="monto" id="dni" type="text" placeholder=" Sin puntos ni comas">
+                    <p>Selecciona una fecha <br></p>
+                    <br>
+                    <div class="sec-but">
+                        <input type="date" id="date">
+                    </div>
+                    <div class="boton">
+                        <input class="calc_button" type="button" onclick="Assign_turn()" name="boton" value="Solicitar">
+                    </div>
+                        <div class="consulta">
+                            <h2>Ya tenes tu turno? Consultalo</h2>
+                            <section class="sec">
+                                <p>Ingrese su numero de DNI (Sin puntos)</p>
+                                <input class="monto" id="dni2" type="number" placeholder=" Sin puntos ni comas">
+                                <button type="button" class="calc_button" onclick="consultar()">Buscar</button>
+                            </section>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
